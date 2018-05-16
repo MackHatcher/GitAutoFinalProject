@@ -22,11 +22,12 @@ gulp.task('imgMin', function() {
 });
 
 gulp.task('js', function() {
-    gulp.src('./src/js/*.js')
+    gulp.src(['./src/js/resources.js', './src/js/app-lvl-1.js', './src/js/engine.js'])
     .pipe(babel({
         presets: ['env']
     }))
-    .pipe(concat('all.js'))
+    
+    .pipe(concat('main.js'))
     .pipe(uglify())
     .pipe(gulp.dest('./dist/js'))
 });
