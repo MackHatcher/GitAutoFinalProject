@@ -1,0 +1,30 @@
+{
+  "name": "gitautofinalproject",
+  "version": "1.0.0",
+  "description": "frontend-nanodegree-arcade-game\r ===============================",
+  "main": "gulpfile.js",
+  "dependencies": {},
+  "devDependencies": {
+    "babel-core": "^6.26.3",
+    "babel-preset-env": "^1.7.0",
+    "gulp-autoprefixer": "^5.0.0",
+    "gulp-babel": "^7.0.1",
+    "gulp-clean-css": "^3.9.4",
+    "gulp-concat": "^2.6.1",
+    "gulp-imagemin": "^4.1.0",
+    "gulp-uglify": "^3.0.0"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MackHatcher/GitAutoFinalProject.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MackHatcher/GitAutoFinalProject/issues"
+  },
+  "homepage": "https://github.com/MackHatcher/GitAutoFinalProject#readme"
+}
