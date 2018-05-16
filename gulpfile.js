@@ -26,6 +26,7 @@ gulp.task('js', function() {
     .pipe(babel({
         presets: ['env']
     }))
-    
+    .pipe(concat('all.js'))
     .pipe(gulp.dest('./dist/js'))
 });
+
