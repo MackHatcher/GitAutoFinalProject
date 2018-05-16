@@ -31,3 +31,7 @@ gulp.task('js', function() {
     .pipe(gulp.dest('./dist/js'))
 });
 
+gulp.task('sass-watch', function () {
+    gulp.watch('./css/**/*.css', ['clean']);
+});
+
