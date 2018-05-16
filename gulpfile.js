@@ -7,17 +7,17 @@ const concat = require('gulp-concat');
 const uglify = require('gulp-uglify');
 
 gulp.task('css', function() {
-    return gulp.src('./css/*')
+    return gulp.src('src/css/*')
         .pipe(clean({compatibility: 'ie8'}))
         .pipe(autoprefix({
             browsers: ['last 2 versions'],
         }))
-        .pipe(gulp.dest('dist'));
+        .pipe(gulp.dest('./dist/css'));
 });
 
 gulp.task('imgMin', function() {
     gulp.src('src/img/assets/*')
-    .pipe(imgMin())
+    .pipe(imagemin())
     .pipe(gulp.dest('./dist/img'))
 });
 
@@ -31,10 +31,10 @@ gulp.task('js', function() {
     .pipe(gulp.dest('./dist/js'))
 });
 
-gulp.task('sass-watch', function () {
+gulp.task('watch', function () {
     gulp.watch('./css/**/*.css', ['clean']);
 });
 
-gulp.task('default', ['css', 'js', 'images'], () => {
+gulp.task('default', ['css', 'js', 'imgMin'], () => {
 })
 
