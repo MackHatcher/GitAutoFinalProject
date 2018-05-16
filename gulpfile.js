@@ -21,3 +21,11 @@ gulp.task('imgMin', function() {
     .pipe(gulp.dest('./dist/img'))
 });
 
+gulp.task('js', function() {
+    gulp.src('./src/js/*.js')
+    .pipe(babel({
+        presets: ['env']
+    }))
+    
+    .pipe(gulp.dest('./dist/js'))
+});
