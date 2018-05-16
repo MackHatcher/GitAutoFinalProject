@@ -15,3 +15,9 @@ gulp.task('css', function() {
         .pipe(gulp.dest('dist'));
 });
 
+gulp.task('imgMin', function() {
+    gulp.src('src/img/assets/*')
+    .pipe(imgMin())
+    .pipe(gulp.dest('./dist/img'))
+});
+
