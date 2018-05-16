@@ -35,3 +35,6 @@ gulp.task('sass-watch', function () {
     gulp.watch('./css/**/*.css', ['clean']);
 });
 
+gulp.task('default', ['css', 'js', 'images'], () => {
+})
+
